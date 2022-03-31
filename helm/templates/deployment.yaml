@@ -10,7 +10,7 @@ metadata:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     app: {{ template "fullname" . }}
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: {{ template "fullname" . }}
